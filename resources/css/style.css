@@ -1,0 +1,276 @@
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(img/test.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/test.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+/* Main navigation homepage */
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #00a0d1;
+}
+
+
+/* Mobile navi */
+.mobile-nav-icon {
+    cursor: pointer;
+    display: none;
+    text-align: center;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #316f7e;
+    border: 1px solid #00a0d1;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #00a0d1;
+    color: #fff;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #316f7e;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #fff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/* ----------------------------------------------- */
+/* ABOUT ME */
+/* ----------------------------------------------- */
+#nav-placeholder {
+    background-image: url(img/test.jpg);
+    margin: 1%;
+    padding: 5px;
+}
+/* Main navigation subpages */
+.main-nav2 {
+    text-align: center;
+    list-style: none;
+    margin: 1% 0 1% 0;
+}
+.main-nav2 li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav2 li a:link,
+.main-nav2 li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+.main-nav2 li a:hover,
+.main-nav2 li a:active {
+    border-bottom: 2px solid #00a0d1;
+}
+#about-me {
+    margin-top: 2%;
+}
+h2 {
+    color: #015884;
+    font-size: 350%;
+}
+.picture {
+    width: 20vw;
+    margin-top: 20%;
+}
+p {
+    font-size: 80%;
+}
+hr {
+    width: 60%;
+    border-top: 0.3vw solid #00a0d1;
+    margin: 3% 0 2% 5%;
+    border-radius: 50px;
+}
+.hr2 {
+    margin-left: 30%;
+    text-align: right;
+    margin-bottom: 3%;
+}
+/*Hobies section*/
+.hobby-dsc {
+    padding-top: 10%;
+}
+.activity {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----------------------------------------------- */
+/* CONTACT ME */
+/* ----------------------------------------------- */
+h3 {
+    text-align: center;
+    color: #015884;
+}
+#contact {
+    margin-top: 4%;
+    color: grey;
+}
+label {
+    padding-left: 1%;
+    font-size: 80%;
+}
+input,
+textarea {
+    width: 100%;
+    display: inline-block;
+    border: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #aca9a9;
+    padding: 2% 0 2% 1%;
+}
+input {
+    height: 5%;
+}
+textarea {
+    height: 20%;
+}
+button {
+    width: 40%;
+    background-color: #026596;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 3% 30% 0 30%;
+}
+button:hover {
+    background-color: #015884;
+    border: 1px solid #53bbd4;
+}
+/* ---- Animations ---- */
+ .js--wp-1 {
+     opacity: 0;
+}
