@@ -13,6 +13,7 @@
 @media only screen and (max-width: 1023px) {
     body { font-size: 18px; }
     section { padding: 60px 0; }
+    h1 { line-height: 120%;}
     
 
 
@@ -20,7 +21,6 @@
 @media only screen and (max-width: 767px) {
     body { font-size: 16px; }
     section { padding: 30px 0; }
-    
     .row,
     .hero-text-box { padding: 0 4%; }
     .col { 
@@ -31,7 +31,7 @@
     
     .main-nav { display: none; }
     .mobile-nav-icon {display: block;}
-    
+    .mobile-nav-icon2 {display: block;}
     .main-nav {
         float: none;
         margin-top: 30px;
@@ -72,15 +72,39 @@
         font-size: 100%;
     }
     
+    /* Nav bar style 2 */
+    .main-nav3 { display: none; }
+    
+    .main-nav3 {
+        float: none;
+        margin-top: 30px;
+        margin-left: -40px;
+    }
+    
+    .main-nav3 li {
+        display: block;
+        text-align: center;
+    }
+    
+    .main-nav3 li a:link,
+    .main-nav3 li a:visited {
+        display: block;
+        font-size: 100%;
+    }
+    
     #profile {
         margin-top: -20%;
         text-align: center;
     }
     
-    h1 { font-size: 180%; }
+    h1 { font-size: 180%; line-height: 150%; }
     h2 { margin-bottom: 4%;}
+    h3 { margin: 10% 0 5% 0;}
     
-    .js--wp-1 {
+    .js--wp-1,
+    .js--wp-2,
+    .js--wp-3,
+    .js--wp-4 {
         animation: none;
         opacity: 1;
     }

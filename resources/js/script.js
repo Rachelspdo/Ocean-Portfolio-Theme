@@ -22,7 +22,7 @@ $(document).ready(function() {
     
     /* Animations on scroll */
     $('.js--wp-1').waypoint(function(direction) {
-        $('.js--wp-1').addClass('animated fadeInRight');
+        $('.js--wp-1').addClass('animated fadeInLeft');
     }, {
         offset: '50%'
     });
@@ -40,7 +40,7 @@ $(document).ready(function() {
     });
     
     $('.js--wp-4').waypoint(function(direction) {
-        $('.js--wp-4').addClass('animated pulse');
+        $('.js--wp-4').addClass('animated fadeInUp');
     }, {
         offset: '50%'
     });
@@ -62,19 +62,5 @@ $(document).ready(function() {
         }        
     });
     
-    /* Mobile navigation of sub page nav bar */
-    $('.js--nav-icon').click(function() {
-        var nav = $('.js--main-nav2');
-        var icon = $('.js--nav-icon i');
-        
-        nav.slideToggle(200);
-        
-        if (icon.hasClass('ion-navicon-round')) {
-            icon.addClass('ion-close-round');
-            icon.removeClass('ion-navicon-round');
-        } else {
-            icon.addClass('ion-navicon-round');
-            icon.removeClass('ion-close-round');
-        }        
-    });
+
 });
